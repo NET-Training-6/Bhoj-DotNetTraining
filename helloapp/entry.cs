@@ -34,15 +34,26 @@ class test
 {
     public static void Main()
     {
-        var Number = 89;
-        if (Number % 2 == 0)
-        {
-            Console.WriteLine(Number + " is even");
-        }
-        else
-        {
-            Console.WriteLine(Number + " is odd");
-        }
+    //    var input = Console.ReadLine();
+    //     var Number = int.par;
+    //     if (Number % 2 == 0)
+    //     {
+    //         Console.WriteLine(Number + " is even");
+    //     }
+    //     else
+    //     {
+    //         Console.WriteLine(Number + " is odd");
+    //     }
+     Console.Write("Enter an amount:");
+    int amt = int.Parse(Console.ReadLine());
+    Console.Write ("Enter a Time period:");
+    int ti = int.Parse(Console.ReadLine());
+    Console.Write("Enter interest:");
+    int rate = int.Parse(Console.ReadLine());
+    int si= amt*ti*rate/100;
+    Console.WriteLine("the simple interest is="+si); 
     }
+   
+
 }
 
