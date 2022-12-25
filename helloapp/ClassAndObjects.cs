@@ -23,4 +23,13 @@ class Animal
     public float weight;
     public Boolean iswild;
 
+    public static void Main(){
+
+        Animal a1 = new Animal();
+        a1.petName ="dog";
+        
+
 }
+
+}
+
