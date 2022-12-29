@@ -1,4 +1,4 @@
-class pattern
+class pattern 
 {
 
    public void IncPattern()
