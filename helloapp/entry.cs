@@ -14,41 +14,25 @@ class entry
         //   Console.WriteLine($"city : {name}");
         //   Console.WriteLine($"country : {country}");
 
-        var story = @"When the C# program is executed//
+      
+         var story = @"When the C# program is executed//
     , the assembly is loaded into the CLR.//
      The CLR performs Just-In-Time (JIT) compilation to convert the IL code to native machine instructions.//
       The CLR provides other services related to automatic garbage collection, exception handling, and resource management.//
        Code that's executed by the CLR is sometimes referred to as//
        is compiled into native machine language that targets a specific platform.";
-        int wrd, l, s, sent;
-        l = 0;
-        wrd = 1;
-        s=0;
-        sent = 0;
-        while (l <= story.Length - 1)
-        {
-            if (story[l] == ' ' )
-            {
-                wrd++;
-            }
-
-            l++;
-
-        }
-        Console.Write("Total number of words in the story is : {0}\n", wrd);
-
-        while (s <= story.Length -1)
-        {
-            if (story[s] == '.' )
-            {
-                sent++;
-            }
-
-            s++;
-
-        }
-        Console.Write("Total number of sentence in the story is : {0}\n", sent);
-
+      
+      
+        char[]separators = {'.','?'};
+        string[] sentences = story.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+        int noOfsentance = sentences.Length;
+        Console.WriteLine("total number of sentance in the story is:"+ sentences);
+    foreach(var s in sentences )
+    {
+        Console.WriteLine("total number of owrds in the story is:"+ sentences);
+        
+    }
+       
     }
 }
 
