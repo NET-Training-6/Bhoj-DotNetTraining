@@ -78,10 +78,15 @@ class EntryPoint
         // p1.CountWords();
         // p1.CountCharacters();
 
-        CollectionLearner22 cl = new();
-        cl.TupleList();
+        // CollectionLearner22 cl = new();
+        // cl.TupleList();
         // collectionSolution cs = new collectionSolution();
         // // cs.ListNumber();
         // cs.listDobs();
+    Linq l = new Linq();
+    l.Test();
+
+        
+        
     }
 }
