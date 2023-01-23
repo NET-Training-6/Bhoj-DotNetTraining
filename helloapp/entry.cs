@@ -83,10 +83,6 @@ class EntryPoint
         // collectionSolution cs = new collectionSolution();
         // // cs.ListNumber();
         // cs.listDobs();
-    Linq l = new Linq();
-    l.Test();
-
-        
-        
+    
     }
 }

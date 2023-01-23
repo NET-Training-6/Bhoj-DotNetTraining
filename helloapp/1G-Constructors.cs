@@ -1,6 +1,8 @@
 // Managed and unmanaged code
 // Memrory management
 
+using System;
+
 class animal1
 {
     public string animalName;
@@ -29,6 +31,11 @@ class animal1
 
 class Test1
 {
+    internal void country1()
+    {
+        throw new NotImplementedException();
+    }
+
     void Test2()
     {
         animal1 animal1 = new animal1("Dog", true);
