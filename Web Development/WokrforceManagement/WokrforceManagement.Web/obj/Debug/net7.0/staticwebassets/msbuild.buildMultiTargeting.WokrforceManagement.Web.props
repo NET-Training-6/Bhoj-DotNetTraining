@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WokrforceManagement.Web.props" />
+</Project>

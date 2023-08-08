@@ -1,0 +1,22 @@
+﻿@model List<Department>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Established</th>
+        <th></th>
+    </tr>
+    @foreach ( var Department  in Model)
+    {
+        <tr>
+            <td>@Department.Name</td>
+            <td>@Department.Description</td>
+            <td>@Department.Established.ToString("MMM- dd-yyyyy")</td>
+            <td>
+                <a href="/employees/edit/@Department.Id"><i class="bi bi-pen text-warning"></i></a>
+                <a href="/employees/delete/@Department.Id"><i class="bi bi-trash text-danger"></i></a>
+            </td>
+        </tr>
+    }
+
+</table>

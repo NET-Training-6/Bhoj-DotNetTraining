@@ -1,0 +1,42 @@
+﻿@model List<EmployeeViewModel>
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>FirstName</th>
+        <th>MiddleName</th>
+        <th>LastName</th>
+        <th>Address</th>
+        <th>Contact</th>
+        <th>Date Of Birth</th>
+        <th>Department</th>
+        <th></th>
+    </tr>
+    @foreach (EmployeeViewModel emp in Model)
+    {
+        <tr>
+            <td>
+                @{
+                    var avatar = string.IsNullOrEmpty(emp.ProfileImagePath)
+                    ? "/images/person.jpg"
+                    : emp.ProfileImagePath;
+                }
+              
+                <img src="@avatar" alt="person" height="30" class="rounded-circle" />
+            </td>
+            <td>@emp.FirstName</td>
+            <td>@emp.MiddleName</td>
+            <td>@emp.LastName</td>
+            <td>@emp.Address</td>
+            <td>@emp.Contact</td>
+            <td>@emp.Dob</td>
+            <td>@emp.DepartmentName</td>
+           <td>
+                <a href="/employees/details/@emp.Id"><i class="bi bi-eye"></i></a>
+                <a href="/employees/edit/@emp.Id"><i class="bi bi-pen text-warning"></i></a>
+                <a href="/employees/delete/@emp.Id"><i class="bi bi-trash text-danger"></i></a>
+            </td>
+        </tr>
+    }
+
+</table>

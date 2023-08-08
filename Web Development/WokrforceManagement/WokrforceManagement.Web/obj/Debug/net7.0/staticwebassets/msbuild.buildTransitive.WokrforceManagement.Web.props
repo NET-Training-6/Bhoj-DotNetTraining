@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\WokrforceManagement.Web.props" />
+</Project>
